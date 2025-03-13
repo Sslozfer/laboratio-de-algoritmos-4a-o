@@ -1,0 +1,1 @@
+el resultado es distinto al esperado, creo que es por que python redondea los numeros por que los calcula en binario y despues los pasa a decimal.
