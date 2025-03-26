@@ -1,0 +1,10 @@
+persona = {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 28,
+    "ciudad": "Buenos Aires"
+}
+print(f"Nombre: {persona['nombre']}")
+print(f"Apellido: {persona['apellido']}")
+print(f"Edad: {persona['edad']}")
+print(f"Ciudad: {persona['ciudad']}")

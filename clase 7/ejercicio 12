@@ -1,0 +1,9 @@
+lenguajes_favoritos = {'Juan': 'python', 'Sara': 'c', 'Eduardo': 'rust', 'Agustina': 'c#'}
+
+personas_a_encuestar = ['Juan', 'Luis', 'Sara', 'Mariana', 'Eduardo', 'Carlos']
+
+for persona in personas_a_encuestar:
+    if persona in lenguajes_favoritos:
+        print(f"Gracias {persona} por responder la encuesta.")
+    else:
+        print(f"Hola {persona}, por favor participa en la encuesta sobre lenguajes favoritos.")

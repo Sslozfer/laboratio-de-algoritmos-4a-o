@@ -1,0 +1,15 @@
+glosario = {
+    "variable": "Es un contenedor en la memoria que se usa para almacenar valores.",
+    "función": "Un bloque de código diseñado para realizar una tarea específica.",
+    "bucle": "Una estructura de control que permite ejecutar repetidamente un bloque de código.",
+    "lista": "Una colección ordenada y mutable de elementos, que pueden ser de diferentes tipos.",
+    "diccionario": "Una colección no ordenada de pares clave-valor, donde cada clave es única."
+}
+glosario["tupla"] = "Una colección ordenada e inmutable de elementos."
+glosario["clase"] = "Una plantilla para crear objetos en programación orientada a objetos."
+glosario["objeto"] = "Una instancia de una clase que contiene atributos y métodos."
+glosario["método"] = "Una función definida dentro de una clase, que opera sobre objetos de esa clase."
+glosario["parámetro"] = "Una variable utilizada para pasar valores a una función."
+
+for palabra, definicion in glosario.items():
+    print(f"{palabra}:\n    {definicion}\n")

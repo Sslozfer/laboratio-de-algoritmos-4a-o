@@ -1,0 +1,32 @@
+mascota1 = {
+    "tipo": "perro",
+    "nombre": "Max",
+    "dueño": "Carlos"
+}
+
+mascota2 = {
+    "tipo": "gato",
+    "nombre": "Luna",
+    "dueño": "Ana"
+}
+
+mascota3 = {
+    "tipo": "conejo",
+    "nombre": "Bunny",
+    "dueño": "Sofía"
+}
+
+mascota4 = {
+    "tipo": "pez",
+    "nombre": "Nemo",
+    "dueño": "Juan"
+}
+
+mascotas = [mascota1, mascota2, mascota3, mascota4]
+
+
+for mascota in mascotas:
+    print(f"Tipo de animal: {mascota['tipo']}")
+    print(f"Nombre: {mascota['nombre']}")
+    print(f"Dueño: {mascota['dueño']}")
+    print()  

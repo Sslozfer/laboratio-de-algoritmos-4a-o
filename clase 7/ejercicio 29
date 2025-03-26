@@ -1,0 +1,6 @@
+def hacer_camiseta(tamaño='L', mensaje='Me encanta Python'):
+    print(f"Vas a recibir una camiseta de tamaño {tamaño} con el siguiente mensaje: '{mensaje}'.")
+    
+hacer_camiseta()
+hacer_camiseta(tamaño='M')
+hacer_camiseta(tamaño='S', mensaje='¡Python es lo mejor!')

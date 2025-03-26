@@ -1,0 +1,9 @@
+numeros_favoritos = {
+    "Juan": 7,
+    "Ana": 3,
+    "Carlos": 10,
+    "Sofía": 21,
+    "Lucía": 5
+}
+for nombre, numero in numeros_favoritos.items():
+    print(f"El número favorito de {nombre} es {numero}.")

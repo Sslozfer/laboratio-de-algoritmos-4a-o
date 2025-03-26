@@ -1,0 +1,16 @@
+edad = 10
+if edad  < 2:
+    print("es un/a bebe")
+elif  4 > edad >= 2:
+    print("es un/a nene/a chiquito/a")
+elif  13 > edad >= 4:
+    print("es un/a nene/a")
+elif  20 > edad >= 13:
+    print("es un/a adolecente")
+elif  65 > edad >= 20:
+    print("es un/a adulto/a")
+elif  edad >= 65:
+    print("es un/a adulto/a mayor")
+else:
+    print("edad no valida")
+    

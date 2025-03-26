@@ -1,0 +1,11 @@
+usuarios_actuales = ["admin", "mamamamama", "Sofía", "Carlos", "Lucía"]
+
+usuarios_nuevos = ["soFía", "Ana", "Carlos", "Mariano", "Lucas"]
+
+usuarios_actuales_lower = [usuario.lower() for usuario in usuarios_actuales]
+
+for usuario in usuarios_nuevos:
+    if usuario.lower() in usuarios_actuales_lower:
+        print(f"El nombre de usuario '{usuario}' ya está en uso. Por favor, elegí otro.")
+    else:
+        print(f"El nombre de usuario '{usuario}' está disponible.")

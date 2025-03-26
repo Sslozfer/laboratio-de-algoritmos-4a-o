@@ -1,0 +1,5 @@
+def describir_ciudad(ciudad, pais):
+    return f"{ciudad} , {pais}" 
+print(describir_ciudad('Madrid', 'España'))  
+print(describir_ciudad('Santiago', 'Chile'))  
+print(describir_ciudad('Reikiavik', 'Islandia')) 

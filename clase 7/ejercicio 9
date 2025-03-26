@@ -1,0 +1,9 @@
+glosario = {
+    "variable": "Es un espacio de memoria donde se puede almacenar un valor.",
+    "función": "Un bloque de codigo reutilizable que realiza una tarea especifica.",
+    "bucle": "Una estructura que repite un bloque de codigo varias veces.",
+    "lista": "Una colección ordenada y mutable de elementos.",
+    "diccionario": "Una estructura de datos que almacena pares de clave-valor."
+}
+for palabra, definicion in glosario.items():
+    print(f"{palabra}:\n    {definicion}\n")

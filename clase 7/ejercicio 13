@@ -1,0 +1,29 @@
+persona1 = {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 28,
+    "ciudad": "Buenos Aires"
+}
+
+persona2 = {
+    "nombre": "Ana",
+    "apellido": "Gómez",
+    "edad": 34,
+    "ciudad": "Madrid"
+}
+
+persona3 = {
+    "nombre": "Carlos",
+    "apellido": "Rodríguez",
+    "edad": 45,
+    "ciudad": "México D.F."
+}
+
+gente = [persona1, persona2, persona3]
+
+for persona in gente:
+    print(f"Nombre: {persona['nombre']}")
+    print(f"Apellido: {persona['apellido']}")
+    print(f"Edad: {persona['edad']}")
+    print(f"Ciudad: {persona['ciudad']}")
+    print()  

@@ -1,0 +1,6 @@
+while True:
+    ingrediente = input("Ingresa un ingrediente para la pizza (o escribe 'salir' para terminar): ")
+    if ingrediente.lower() == 'salir':
+        print("¡Gracias por elegir los ingredientes! ¡Tu pizza está lista!")
+        break     
+    print(f"Vamos a agregar {ingrediente} a tu pizza.")  

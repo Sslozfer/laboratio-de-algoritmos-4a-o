@@ -1,0 +1,3 @@
+def mostrar_mensaje():
+    print("Estoy aprendiendo a trabajar con funciones en Python. Spoiler, ya lo se hacer")
+mostrar_mensaje()

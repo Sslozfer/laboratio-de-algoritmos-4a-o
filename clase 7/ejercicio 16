@@ -1,0 +1,24 @@
+ciudades = {
+    "París": {
+        "país": "Francia",
+        "población": "2.1 millones",
+        "dato": "Es conocida como la 'Ciudad de la Luz' y es famosa por la Torre Eiffel."
+    },
+    "Tokio": {
+        "país": "Japón",
+        "población": "14 millones",
+        "dato": "Tokio es la ciudad más poblada del mundo y tiene el sistema de trenes más avanzado."
+    },
+    "Nueva York": {
+        "país": "Estados Unidos",
+        "población": "8.4 millones",
+        "dato": "Es conocida como 'La Gran Manzana' y es un centro global de cultura, arte y negocios."
+    }
+}
+
+for ciudad, info in ciudades.items():
+    print(f"Información sobre {ciudad}:")
+    print(f"  País: {info['país']}")
+    print(f"  Población: {info['población']}")
+    print(f"  Dato interesante: {info['dato']}")
+    print()

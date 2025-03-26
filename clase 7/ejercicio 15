@@ -1,0 +1,11 @@
+lugares_favoritos = {
+    "Juan": ["Paris", "Tokio", "Buenos Aires"],
+    "Ana": ["Nueva York", "Roma"],
+    "Carlos": ["Madrid", "Londres", "Barcelona"]
+}
+
+for persona, lugares in lugares_favoritos.items():
+    print(f"{persona} tiene los siguientes lugares favoritos:")
+    for lugar in lugares:
+        print(f"- {lugar}")
+    print() 

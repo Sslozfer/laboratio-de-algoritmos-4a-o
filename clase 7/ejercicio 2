@@ -1,0 +1,13 @@
+frutas_favoritas = ["bananas, peras, uvas"]
+
+for frutas in frutas_favoritas:
+    if frutas == "bananas":
+        print("me encantan las bananas")
+    if frutas == "peras":
+        print("me encantan las peras")
+    if frutas == "uvas":
+        print("me encantan las uvas")
+    if frutas == "manzanas":
+        print("me encantan las manzanas")
+    if frutas == "melocotones":
+        print("me encantan los melocotones ")

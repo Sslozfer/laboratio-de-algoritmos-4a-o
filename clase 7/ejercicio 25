@@ -1,0 +1,10 @@
+encuesta_destinos = {}
+while True:
+    nombre = input("¿Cuál es tu nombre? (Escribe 'salir' para terminar): ")
+    if nombre.lower() == 'salir':
+        break
+    destino = input(f"{nombre}, si pudieras visitar un lugar en el mundo, ¿a dónde irías? ")
+    encuesta_destinos[nombre] = destino  
+print("\nResultados de la encuesta:")
+for nombre, destino in encuesta_destinos.items():
+    print(f"{nombre} sueña con visitar {destino}.")

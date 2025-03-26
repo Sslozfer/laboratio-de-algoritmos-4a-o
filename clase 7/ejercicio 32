@@ -1,0 +1,16 @@
+def hacer_album(artista, titulo, canciones=None):
+    album = {'artista': artista, 'título': titulo}
+    if canciones:
+        album['canciones'] = canciones
+    return album
+
+album1 = hacer_album('The Beatles', 'Abbey Road')
+album2 = hacer_album('Pink Floyd', 'The Dark Side of the Moon')
+album3 = hacer_album('Led Zeppelin', 'IV')
+
+print(album1)
+print(album2)
+print(album3)
+
+album4 = hacer_album('Michael Jackson', 'Thriller', 9)
+print(album4)

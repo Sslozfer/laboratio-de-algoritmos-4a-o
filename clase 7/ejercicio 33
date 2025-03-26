@@ -1,0 +1,30 @@
+def hacer_album(artista, titulo, canciones=None):
+
+    album = {'artista': artista, 'título': titulo}
+    if canciones:
+        album['canciones'] = canciones
+    return album
+
+while True:
+    print("\n Ingrese la información del álbum (o 'q' para salir):")
+    artista = input("Nombre del artista: ")
+    if artista.lower() == 'q':
+        break
+    
+    titulo = input("Título del álbum: ")
+    if titulo.lower() == 'q':
+        break
+    
+    canciones = input("Cantidad de canciones (opcional, presione Enter para omitir): ")
+    if canciones.lower() == 'q':
+        break
+ 
+    if canciones:
+        album = hacer_album(artista, titulo, int(canciones))
+    else:
+        album = hacer_album(artista, titulo)
+   
+    print("\n Album creado:")
+    print(album)
+
+print("\n¡Gracias por usar el sistema de álbumes musicales!")

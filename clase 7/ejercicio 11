@@ -1,0 +1,20 @@
+rios = {
+    "Nilo": "Egipto",
+    "Amazonas": "Brasil",
+    "Misisipi": "Estados Unidos"
+}
+
+for rio, pais in rios.items():
+    print(f"El {rio} pasa por {pais}.")
+
+print()  
+
+print("Ríos:")
+for rio in rios.keys():
+    print(rio)
+
+print()  
+
+print("Países:")
+for pais in rios.values():
+    print(pais)
