@@ -1,0 +1,13 @@
+def mostrar_mensajes(mensajes):
+    for mensaje in mensajes:
+        print(mensaje)
+
+mensajes = [
+    "Hola, ¿cóomo estas?",
+    "Nos vemos a las 5pm",
+    "Feliz cumpleaños",
+    "Recorda comprar pan",
+    "Reunion mañana a las 11"
+]
+
+mostrar_mensajes(mensajes)

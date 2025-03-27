@@ -1,0 +1,34 @@
+#import nombre_módulo
+import mensajes
+lista_mensajes = ["Hola", "Como estas", "Adios"]
+lista_enviados = []
+mensajes.enviar_mensajes(lista_mensajes[:], lista_enviados)  
+mensajes.mostrar_mensajes(lista_enviados)
+
+#from nombre_módulo import nombre_función
+from mensajes import mostrar_mensajes, enviar_mensajes
+lista_mensajes = ["Python", "es", "genial"]
+lista_enviados = []
+enviar_mensajes(lista_mensajes[:], lista_enviados)
+mostrar_mensajes(lista_enviados)
+
+#from nombre_módulo import nombre_función as nf
+from mensajes import mostrar_mensajes as mm, enviar_mensajes as em
+lista_mensajes = ["Metodo", "con", "alias"]
+lista_enviados = []
+em(lista_mensajes[:], lista_enviados)
+mm(lista_enviados)
+
+#import nombre_módulo as nm
+import mensajes as msg
+lista_mensajes = ["Usando", "alias", "para el modulo"]
+lista_enviados = []
+msg.enviar_mensajes(lista_mensajes[:], lista_enviados)
+msg.mostrar_mensajes(lista_enviados)
+
+#from nombre_módulo import * (segun el profe no recomendado)
+from mensajes import *
+lista_mensajes = ["Este", "es", "el ultimo"]
+lista_enviados = []
+enviar_mensajes(lista_mensajes[:], lista_enviados)
+mostrar_mensajes(lista_enviados)

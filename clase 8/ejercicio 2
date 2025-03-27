@@ -1,0 +1,27 @@
+def mostrar_mensajes(mensajes):
+    for mensaje in mensajes:
+        print(mensaje)
+
+def enviar_mensajes(mensajes, mensajes_enviados):
+    while mensajes:
+        mensaje_actual = mensajes.pop(0)  
+        print(f"Enviando mensaje: {mensaje_actual}")
+        mensajes_enviados.append(mensaje_actual)
+
+mensajes = [
+    "Hola, ¿cóomo estas?",
+    "Nos vemos a las 5pm",
+    "Feliz cumpleaños",
+    "Recorda comprar pan",
+    "Reunion mañana a las 11"
+]
+
+mensajes_enviados = []
+
+print("Mensajes originales:")
+mostrar_mensajes(mensajes)
+
+enviar_mensajes(mensajes, mensajes_enviados)
+
+print("\nLista 'mensajes':", mensajes)
+print("Lista 'mensajes_enviados':", mensajes_enviados)

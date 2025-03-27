@@ -1,0 +1,11 @@
+def hacer_auto(fabricante, modelo, **info_adicional):
+    info_auto = {
+        'fabricante': fabricante,
+        'modelo': modelo
+    }
+    info_auto.update(info_adicional) 
+    return info_auto
+
+auto = hacer_auto('toyota', 'corolla', color='gris', airbags=True)
+
+print(auto)

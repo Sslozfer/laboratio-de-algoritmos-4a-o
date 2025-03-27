@@ -1,0 +1,12 @@
+def hacer_sandwich(*ingredientes):
+    print("\nResumen del sándwich:")
+    if ingredientes:
+        print("Ingredientes incluidos:")
+        for ingrediente in ingredientes:
+            print(f"- {ingrediente}")
+    else:
+        print("¡Sándwich vacío! (sin ingredientes)")
+
+hacer_sandwich("jamon", "queso", "lechuga")
+hacer_sandwich("pollo", "tomate", "mayonesa", "pan integral")
+hacer_sandwich("pepinillos", "mostaza")
