@@ -1,0 +1,42 @@
+class Usuario:
+    def __init__(self, nombre, apellido, edad, ciudad, correo):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.ciudad = ciudad
+        self.correo = correo
+        self.intentos_inicio = 0  
+    
+    def describir_usuario(self):
+        print("\nInformación del usuario:")
+        print(f"Nombre completo: {self.nombre} {self.apellido}")
+        print(f"Edad: {self.edad} años")
+        print(f"Ciudad: {self.ciudad}")
+        print(f"Correo electrónico: {self.correo}")
+    
+    def saludar_usuario(self):
+        print(f"\n¡Hola, {self.nombre}! Bienvenido/a de nuevo.")
+    
+    def incrementar_intentos_inicio(self):
+        self.intentos_inicio += 1
+    
+    def reiniciar_intentos_inicio(self):
+        self.intentos_inicio = 0
+
+usuario1 = Usuario("Ana", "Gómez", 28, "Buenos Aires", "ana.gomez@example.com")
+usuario2 = Usuario("Carlos", "López", 35, "Madrid", "carlos.lopez@example.com")
+usuario3 = Usuario("Mika", "Tanaka", 22, "Tokio", "mika.tanaka@example.com")
+
+usuario1.describir_usuario()
+usuario1.saludar_usuario()
+
+usuario2.describir_usuario()
+usuario2.saludar_usuario()
+
+usuario3.describir_usuario()
+usuario3.saludar_usuario()
+
+usuario1.incrementar_intentos_inicio()
+print(f"\n{usuario1.nombre} ha intentado iniciar sesión {usuario1.intentos_inicio} veces.")
+usuario1.reiniciar_intentos_inicio()
+print(f"Después del reinicio: {usuario1.intentos_inicio} intentos.")
